@@ -7,8 +7,8 @@ hooks:
    ApplicationStart:
    - location: scripts/before_install.sh
    - location: scripts/start_server.sh
-     runas: root
+     runas: ec2-user
    ApplicationStop:
    - location: scripts/before_install.sh
    - location: scripts/stop_server.sh
-     runas: root
+     runas: ec2-user

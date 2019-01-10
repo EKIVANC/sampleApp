@@ -1,4 +1,5 @@
 #!/bin/bash
 source /home/ec2-user/.bash_profile
-echo 'stoping server'
+echo 'installing forever'
+npm i forever -g
 forever stopall

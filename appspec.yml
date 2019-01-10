@@ -4,12 +4,11 @@ files:
    - source: /
      destination: /var/app
 hooks:
-   BeforeInstall:
-   - location: scripts/before_install.sh
-     runas: root
    ApplicationStart:
+   - location: scripts/before_install.sh
    - location: scripts/start_server.sh
      runas: root
    ApplicationStop:
+   - location: scripts/before_install.sh
    - location: scripts/stop_server.sh
      runas: root

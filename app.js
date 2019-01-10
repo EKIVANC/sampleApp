@@ -7,7 +7,7 @@ app.get('/', (req, res)=> {
 });
 
 const server = app.listen(port, ()=> {
-    console.log('app is up and running!');    
+    console.log('app is up and runnnning!');    
 })
 
 

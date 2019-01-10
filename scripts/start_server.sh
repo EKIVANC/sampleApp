@@ -8,4 +8,4 @@ echo 'installing forever'
 npm i forever -g
 cd /var/app
 echo $PWD
-forever app.js
+forever start app.js

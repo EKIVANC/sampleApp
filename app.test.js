@@ -3,7 +3,7 @@ const {app, server} = require('./app');
 
 describe('GET /', function() {
     it('Is it working?', function(done) {
-      request(app).get('/').expect('Working!').end(done);
+      request(app).get('/').expect('Working Test!').end(done);
     });
     
     after(function(done){

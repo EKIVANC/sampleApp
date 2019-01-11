@@ -4,11 +4,10 @@ files:
    - source: /
      destination: /var/app
 hooks:
+	 - BeforeInstall: scripts/before_install.sh
    ApplicationStart:
-   - location: scripts/before_install.sh
    - location: scripts/start_server.sh
      runas: ec2-user
    ApplicationStop:
-   - location: scripts/before_install.sh
    - location: scripts/stop_server.sh
      runas: ec2-user
